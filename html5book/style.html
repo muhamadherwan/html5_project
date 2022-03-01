@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <style>
+      body {
+        background-color: black;
+        background-image: url(frenchfood.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* background-size: cover; */
+        /* background image strech */
+        background-size: 100% 100%;
+      }
+      h1 {
+        color: green;
+        font-family: verdana;
+        font-size: 300%;
+      }
+      h2 {
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 200%;
+      }
+      p {
+        color: white;
+        font-family: courier;
+        font-size: 160%;
+        border: 2px solid green;
+        padding: 30px; /* the space between the text and the border (inside space) */
+        margin: 50px; /* the space between the border and outside */
+      }
+    </style>
+    <title>Internal CSS</title>
+  </head>
+  <body>
+    <h1>This is a header</h1>
+    <p id="C3">This is Chapter 3</p>
+    <h2>Backgroud Image</h2>
+    <p>
+      A background for a p element:
+    </p>
+    <p style="background-image: url('workplace.jpg');">
+      You can specify background images
+      <br />
+      for any visible HTML element.
+      <br />
+      In this example, the background image
+      <br />
+      is specified for a p element.
+      <br />
+      By default, the background-image
+      <br />
+      will repeat itself it the direction(s)
+      <br />
+      where it is smaller than the element
+      <br />
+      where it is specified. (Try resize the
+      <br />
+      browser window to see how the
+      <br />
+      background image behaves.)
+    </p>
+    <h2>The picture element</h2>
+    <picture>
+      <source media="(min-width: 650px)" srcset="img_food.jpg" />
+      <source media="(min-width: 465px" srcset="img_car.jpg" />
+      <img src="img_girl.jpg" style="width: auto;" />
+    </picture>
+  </body>
+</html>
