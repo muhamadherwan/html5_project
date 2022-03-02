@@ -2,6 +2,7 @@
 <html lang="en-US">
   <head>
     <title>Basic</title>
+    <link rel="icon" type="image/x-icon" href="img_food.jpg">
     <style>
         a:link {
             color: green;
@@ -42,6 +43,19 @@
             background-color: green;
             text-decoration: underline;
             border: 3px solid red;
+        }
+
+        table, th, td {
+          border:1px solid white;
+          border-collapse:collapse;
+          /* border-radius:10px; make the table border round */
+        }
+
+        th, td {
+          background-color: #96D4D4;
+          border-radius:10px; /* make row border round */
+          border-color: green;
+          border-style: dotted;
         }
     </style>
   </head>
@@ -173,6 +187,32 @@
     <p><img src="programming.gif" alt="hacker" title="hacker" style="float:right;width:48px;height:48px">This image will float on the right.</p>
 
     <p><img src="programming.gif" alt="hacker" title="hacker" style="float:left;width:42px;height:48px">This image will float on the left.</p>
+
+    <p>
+    <h2>Table Example</h2>
+    <table style="width:50%">
+      <tr>
+        <th>Name</th>
+        <th>Company</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Ezzi Moralez</td>
+        <td>Araknet</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Zuck</td>
+        <td>Meta</td>
+        <td>32</td>
+      </tr>
+      <tr>
+        <td>Wan</td>
+        <td>Mayaliti</td>
+        <td>41</td>
+      </tr>
+    </table>
+    </p>
   </body>
 
 
