@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML JS</title>
+  </head>
+  <body>
+    <h2>Show me the date and time</h2>
+    <button onclick="showDate()">Click to see date and time</button>
+    <p id="datetime"></p>
+    <h2>Show me hi ezzi.</h2>
+    <button
+      onclick="document.getElementById('show').innerHTML ='Hi Ezzi Moralez Hacker!'"
+    >
+      Show me what you got!
+    </button>
+    <p id="show">Change this!</p>
+    <h2 id="style">JavaScript can change the style of an HTML element.</h2>
+    <button onclick="styleChange()">Change the style</button>
+
+    <!-- show this message if the browser does not support javascript -->
+    <noscript>Sorry your browser does not support JavaScript!</noscript>
+  </body>
+  <script>
+    function showDate() {
+      document.getElementById('datetime').innerHTML = Date()
+    }
+
+    function styleChange() {
+      document.getElementById('style').style.fontSize = '25px'
+
+      document.getElementById('style').style.color = 'green'
+
+      document.getElementById('style').style.background = 'black'
+    }
+  </script>
+</html>
