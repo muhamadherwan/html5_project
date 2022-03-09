@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ID</title>
+  </head>
+  <style>
+    #myHeader {
+      background-color: black;
+      color: green;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .city {
+      background-color: tomato;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <h2>
+      ID can only use by only one HTML element within the page. Class name can
+      be used by multiple HTML elements within the page.
+    </h2>
+    <!-- an element with a unique id -->
+    <h1 id="myHeader">My cities.</h1>
+
+    <!-- multiple element with same class -->
+    <h2 class="city">London</h2>
+    <p>capital of England.</p>
+    <h2 class="city">Paris</h2>
+    <p>capital of France.</p>
+
+    <h2>Use id attribute in javascript with getElementById()</h2>
+    <h1 id="change">Hello Ezzi!</h1>
+    <button onclick="change()">Change text!</button>
+    <script>
+      function change() {
+        document.getElementById('change').innerHTML = 'Good bye Zuck!'
+      }
+    </script>
+  </body>
+</html>
