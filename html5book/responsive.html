@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+  </head>
+  <body>
+    <h2>Responsive Image</h2>
+    <p>
+      max-width:100% prevents the image from getting bigger then its original
+      size and scale down in smaller browser.
+    </p>
+    <img src="img_girl.jpg" style="max-width: 100%; height: auto;" />
+    <h2>
+      Show diffrent image depending on browser width using picture element.
+    </h2>
+    <picture>
+      <source srcset="img_smallflower.jpg" media="(max-width: 600px)" />
+      <source srcset="img_flowers.jpg" media="(max-width: 1500px)" />
+      <!-- <source srcset="flowers.jpg" /> -->
+      <img src="img_flowers.jpg" alt="flower" />
+    </picture>
+    <h1 style="font-size: 10vw;">Responsive text</h1>
+    <p style="font-size: 5vw;">
+      Use vw unit when resizing the text. 10vw will set the size to 10% of the
+      viewport width.
+    </p>
+  </body>
+</html>

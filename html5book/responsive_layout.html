@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initil-scale=1.0" />
+    <title>Full Responsive Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: grey;
+      }
+
+      .header {
+        background-color: black;
+        padding: 15px;
+        text-align: center;
+        color: green;
+        border: 1px solid green;
+      }
+
+      .container {
+        overflow: auto;
+      }
+
+      .menu {
+        float: left;
+        width: 20%;
+        text-align: center;
+      }
+
+      .menu a {
+        background-color: grey;
+        padding: 8px;
+        margin-top: 7px;
+        display: block;
+        width: 100%;
+        color: black;
+        text-decoration: none;
+      }
+
+      .main {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+      }
+
+      .title {
+        color: green;
+      }
+
+      .right {
+        background-color: grey;
+        float: left;
+        width: 20%;
+        padding: 15px;
+        margin-top: 7px;
+        text-align: center;
+        color: black;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 10px;
+        margin-top: 7px;
+        color: green;
+      }
+
+      /* responsive part */
+      @media only screen and (max-width: 620px) {
+        /* for mobile phones */
+        .menu,
+        .main,
+        .right {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header"><h1>Code Jedi</h1></div>
+
+    <div class="container">
+      <div class="menu">
+        <a href="#">Code</a>
+        <a href="#">Hack</a>
+        <a href="#">Game</a>
+        <a href="#">Meta</a>
+      </div>
+      <div class="main">
+        <h2 class="title">The Hacker Ways</h2>
+        <p>
+          Move fast break things, focus on impact, done is better then perfect,
+          code win arguments.
+        </p>
+      </div>
+
+      <div class="right">
+        <h2>About</h2>
+        <p>Eat sleep code hack game repeat.</p>
+      </div>
+    </div>
+
+    <div class="footer">© copyright codejedi.com</div>
+  </body>
+</html>
