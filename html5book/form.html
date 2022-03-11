@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,inital-scale=1.0" />
+  <title>HTML FORM</title>
+  <body>
+    <h2>HTML Form:</h2>
+    <form action="" method="post" autocomplete="on" id="form1">
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First Name</label>
+        <br />
+        <input type="text" id="fname" name="fname" value="Daigo" readonly size="50"/>
+        <br />
+        <label for="lname">Last Name</label>
+        <br />
+        <input type="text" id="lname" name="lname" value="Saito" maxlength="4" size="4"/>
+        <br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" disabled><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="pasword">
+      </fieldset>
+      <p>
+      <fieldset>
+        <legend>Choose your favorite web language:</legend>
+        <input type="radio" name="fav_language" id="html" value="html" />
+        <label for="htlm">HTML</label>
+        <br />
+        <input type="radio" name="fav_language" id="css" value="css" />
+        <label for="css">CSS</label>
+        <br />
+        <input
+          type="radio"
+          name="fav_language"
+          id="javascript"
+          value="javascript"
+        />
+        <label for="javascript">JavaScript</label>
+      </fieldset>
+      </p>
+      <p>Checkbox:</p>
+      <input type="checkbox" name="skills" id="coder" value="coder" />
+      <label for="coder">I'm a coder.</label>
+      <br />
+      <input type="checkbox" name="skills" id="gamer" value="gamer" />
+      <label for="gamer">I'm a gamer.</label>
+      <br />
+      <input type="checkbox" name="skills" id="hacker" value="hacker" />
+      <label for="hacker">I'm a hacker.</label>
+      <p>Select single element:</p>
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars" size="3">
+        <option value="honda" selected>Honda</option>
+        <option value="toyota">Toyota</option>
+        <option value="nissan">Nissan</option>
+      </select>
+      <p>Select mutiple element:</p>
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars" size="3" multiple>
+        <option value="honda" selected>Honda</option>
+        <option value="toyota">Toyota</option>
+        <option value="nissan">Nissan</option>
+      </select>
+      <p>Text area:</p>
+      <textarea name="message" id="message" cols="30" rows="10">
+Move fast break things.
+</textarea
+      >
+      <p>Button element:</p>
+      <button type="button" onclick="alert('Hello Obiwan')">Click me</button>
+      <p>Datalist element:</p>
+      <input list="browser">
+      <datalist id="browser">
+          <option value="Chrome">Chrome</option>
+          <option value="Firefox">Firefox</option>
+          <option value="Brave">Brave</option>
+      </datalist>
+      <p>input type color:</p>
+      <label for="color">Select color:</label>
+      <input type="color" name="color" id="color" value="#ff0000">
+      <p>Input type date:</p>
+      <label for="birthday">Birthday:</label>
+      <input type="date" name="birthday" id="birthday"><br>
+      <label for="datemax">Enter date before 1981-01-01:</label>
+      <input type="date" name="datemax" id="datemax" max="1979-12-31"><br>
+      <label for="datemin">Enter a date after 2000-01-01</label>
+      <input type="date" name="datemin" id="datemin" min="2000-01-01">
+      <br>
+      <label for="bdtimelocal">Birthday (date and time):</label>
+      <input type="datetime-local" id="bdtimelocal" name="bdtimelocal">
+      <br>
+      <label for="bdaymonth">Birthday (month and year):</label><input type="month" id="bdaymonth" name="bdaymonth">
+      <br><br>
+
+      <label for="myfile">Select a file:</label>
+      <input type="file" name="myfile" id="myfile"><br><br>
+      
+      <label for="myfile2">Select multiple file:</label>
+      <input type="file" name="myfile2" id="myfile2" multiple><br><br>
+      
+      <input type="hidden" name="cid" id="cid" value="007"><br>
+
+
+      <label for="quantity">Quantity between 1 and 5:</label><input type="number" name="quantity" id="quantity" min="1" max="5"><br>
+      <label for="q2">Quantity:</label>
+      <input type="number" name="q2" id="q2" min="0" max="100" step="10" value="30"><br>
+      <label for="vol">Volume slider (between 0 and 50):</label><input type="range" id="vol" name="vol" min="0" max="50"><br>
+      <label for="gsearch">Search Google:</label>
+      <input type="search" name="gsearch" id="gsearch" autofocus><br><br>
+
+      <label for="phone">Phone number:</label>
+      <input type="tel" name="phone" id="phone" placeholder="012-123-1234" 
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required title="Enter phone number following the format."><br>
+      <small>Format: 012-123-1234</small><br><br>
+
+      <label for="time">Select time:</label>
+      <input type="time" name="time" id="time"><br>
+      <label for="homepage">Add your homepage:</label>
+      <input type="url" name="homepage" id="homepage"><br>
+      <label for="week">Select a week:</label>
+      <input type="week" name="week" id="week"><br />
+      <br /><br>
+
+      <label for="image">Image input</label>
+      <input type="image" src="img_girl.jpg" alt="submit" width="48" height="48"><br><br>
+
+      <input type="reset" value="reset">
+      <input type="submit" value="submit" />
+      <input type="submit" value="submit to a new tab" formtarget="_blank">
+      <input type="submit" value="Submit without validation " formnovalidate="formnovalidate">
+    </form>
+    <h2>The form attribute specifies the form input element outside the form element:</h2>
+    <label for="catname">Cat Name:</label>
+    <input type="text" name="catname" id="catname" form="form1">
+  </body>
+</html>
