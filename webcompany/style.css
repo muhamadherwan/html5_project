@@ -25,6 +25,13 @@ ul {
   color: #fff;
 }
 
+.dark {
+  padding: 15px;
+  background: #35424a;
+  color: #fff;
+  margin: 10px 0 10px;
+}
+
 /* header */
 header {
   background: #35424a;
@@ -126,6 +133,33 @@ header a:hover {
 
 #boxes .box img {
   width: 90px;
+}
+
+/* main */
+article#main-col {
+  float: left;
+  width: 65%;
+}
+/* sidebar */
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+/* services */
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  background: #e6e6e6;
 }
 
 /* footer */
