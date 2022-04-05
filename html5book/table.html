@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Table</title>
+    </head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse:collapse;
+        }
+
+        /* th {
+            text-align:left;
+        } */
+
+        table {
+            /* change the space between table cell using border-spacing */
+            border-spacing: 100px;
+        }
+
+        th, td {
+            /* padding is the space between the cell edges and the cell content. */
+            padding-top: 10px; 
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px;
+        }
+
+    </style>
+<body>
+    <h2>Table width:</h2>
+    <p>
+        <table style="width:100%">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Company</th>
+            </tr>
+            <tr>
+                <td>Zuck</td>
+                <td>Kerberg</td>
+                <td>Meta</td>
+            </tr>
+            <tr>
+                <td>Ezzi</td>
+                <td>Moralez</td>
+                <td>Araknet</td>
+            </tr>
+            <tr>
+                <td>Obiwan</td>
+                <td>Kenobi</td>
+                <td>Mayaliti</td>
+            </tr>
+        </table>
+    </p>
+    <h2>Table column width:</h2>
+    <p>
+        <table style="width:100%">
+            <tr>
+                <th style="width:70%">First Name</th>
+                <th>Last Name</th>
+                <th>Company</th>
+            </tr>
+            <tr>
+                <td>Zuck</td>
+                <td>Kerberg</td>
+                <td>Meta</td>
+            </tr>
+            <tr>
+                <td>Ezzi</td>
+                <td>Moralez</td>
+                <td>Araknet</td>
+            </tr>
+            <tr>
+                <td>Obiwan</td>
+                <td>Kenobi</td>
+                <td>Mayaliti</td>
+            </tr>
+        </table>
+    </p>
+    <h2>Table row height:</h2>
+    <p>
+        <table style="width:100%">
+            <tr style="height:200px">
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Company</th>
+            </tr>
+            <tr>
+                <td>Zuck</td>
+                <td>Kerberg</td>
+                <td>Meta</td>
+            </tr>
+            <tr>
+                <td>Ezzi</td>
+                <td>Moralez</td>
+                <td>Araknet</td>
+            </tr>
+            <tr>
+                <td>Obiwan</td>
+                <td>Kenobi</td>
+                <td>Mayaliti</td>
+            </tr>
+        </table>
+    </p>
+    <h2>Vertical table header:</h2>
+    <p>Use the first column as table headers.</p>
+    <p>
+        <table style="width:100%">
+            <tr>
+                <th>First Name</th>
+                <td>Zuck</td>
+                <td>Ezzi</td>
+                <td>Obiwan</td>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+                <td>Kerberg</td>
+                <td>Moralez</td>
+                <td>Kenobi</td>
+            </tr>
+            <tr>
+                <th>Company</th>
+                <td>Meta</td>
+                <td>Araknet</td>
+                <td>Mayaliti</td>
+            </tr>
+        </table>
+    </p>
+    <h2>Header for multiple columns:</h2>
+    <p>Header that spans over more columns using colspan.</p>
+    <p>
+ <table style="width:100%">
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Company</th>
+            </tr>
+            <tr>
+                <td>Zuck</td>
+                <td>Kerberg</td>
+                <td>Meta</td>
+            </tr>
+            <tr>
+                <td>Ezzi</td>
+                <td>Moralez</td>
+                <td>Araknet</td>
+            </tr>
+            <tr>
+                <td>Obiwan</td>
+                <td>Kenobi</td>
+                <td>Mayaliti</td>
+            </tr>
+        </table>
+    </p>
+    <h2>Table caption:</h2>
+    <p>Add table caption with caption tag.</p>
+    <p>
+ <table style="width:100%">
+    <caption>Startup Hackers</caption>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Company</th>
+            </tr>
+            <tr>
+                <td>Zuck</td>
+                <td>Kerberg</td>
+                <td>Meta</td>
+            </tr>
+            <tr>
+                <td>Ezzi</td>
+                <td>Moralez</td>
+                <td>Araknet</td>
+            </tr>
+            <tr>
+                <td>Obiwan</td>
+                <td>Kenobi</td>
+                <td>Mayaliti</td>
+            </tr>
+        </table>
+    </p>
+</body>
+</html>

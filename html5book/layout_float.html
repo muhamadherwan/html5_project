@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1" />
+    <meta name="descrition" content="Layout using CSS float" />
+    <meta name="keywords" content="HTML, CSS, float layout" />
+    <meta name="author" content="Obiwan" />
+    <title>CSS Layout: Float</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Header style */
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      /* Two collums/boxes that float next to each other */
+      nav {
+        float: left;
+        width: 30%;
+        height: 300px; /* only for demo. should be removed */
+        background-color: #ccc;
+        padding: 20px;
+      }
+
+      /* list inside the meny style */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px; /* only for demo. should be remove */
+      }
+
+      /* clear float after the columns */
+      section::after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      /* footer style */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      /* responsive layout: make the two boxes stack on top of each other in small screen. */
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Layout Float</h2>
+    <p>
+      This layout contains a header, 2 columns/boxes (navigation box, content
+      box) and a footer. On smaller screens, the columns will stack on top of
+      each other (responsive).
+    </p>
+
+    <header><h2>Cities</h2></header>
+
+    <section>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">London</a>
+          </li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>London</h1>
+        <p>
+          London is the capital city of England. It is the most populous city in
+          the United Kingdom, with a metropolitan area over 13 million
+          inhabitants.
+        </p>
+        <p>
+          Standing on the River Thames, London has been a major settlement for
+          two millenia, its history going back to its founding by the Romans,
+          who name it Londinium.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>

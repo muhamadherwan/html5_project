@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript change image.</title>
+  </head>
+  <body>
+    <script>
+      function light(sw) {
+        let pic
+        if (sw === 0) {
+          pic = 'pic_bulboff.gif'
+        } else {
+          pic = 'pic_bulbon.gif'
+        }
+
+        document.getElementById('myImage').src = pic
+      }
+    </script>
+
+    <h2>JavaScript can change an image attribute.</h2>
+    <img id="myImage" src="pic_bulboff.gif" width="100" heigth="180" />
+    <p>
+      <button onclick="light(1)">Light On</button>
+      <button onclick="light(0)">Light Off</button>
+    </p>
+  </body>
+</html>

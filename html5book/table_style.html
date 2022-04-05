@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table Styles</title>
+    <style>
+      .table-horizontal {
+        width: 50%;
+        border-collapse: collapse;
+      }
+
+      .table-horizontal th {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid black;
+      }
+
+      .table-horizontal td {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid black;
+      }
+
+      .table-horizontal tr:nth-child(even) {
+        background-color: aqua;
+      }
+
+      .table-vertical {
+        width: 50%;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .table-vertical th {
+        border: 1px solid black;
+        text-align: center;
+      }
+
+      .table-vertical td {
+        border: 1px solid black;
+        text-align: center;
+      }
+
+      .table-vertical th:nth-child(even) {
+        background-color: aquamarine;
+        padding: 8px;
+      }
+
+      .table-vertical td:nth-child(even) {
+        background-color: aquamarine;
+        padding: 8px;
+      }
+
+      .table-vertical tr {
+        background-color: white;
+      }
+
+      .table-combo {
+        border: 1px solid white;
+        border-collapse: collapse;
+        background-color: black;
+        color: white;
+        width: 50%;
+      }
+
+      .table-combo th {
+        padding: 8px;
+      }
+
+      .table-combo td {
+        padding: 8px;
+        text-align: center;
+        border: 1px solid white;
+      }
+      .table-combo tr:nth-child(even) {
+        background-color: green;
+      }
+      .table-combo th:nth-child(even) {
+        background-color: gray;
+      }
+      .table-combo td:nth-child(even) {
+        background-color: grey;
+      }
+
+      .table-horizontal-divider {
+        width: 50%;
+        border-collapse: collapse;
+      }
+
+      .table-horizontal-divider tr {
+        border-bottom: 1px solid black;
+      }
+
+      .table-horizontal-divider tr:hover {
+        background-color: green;
+      }
+
+      .table-horizontal-divider td {
+        padding: 8px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Zebra stripe table using nth-child() selector.</h2>
+    <table class="table-horizontal">
+      <tr>
+        <th>Name</th>
+        <th>Company</th>
+        <th>Post</th>
+      </tr>
+      <tr>
+        <td>Ezzi</td>
+        <td>Araknet</td>
+        <td>Hacker</td>
+      </tr>
+      <tr>
+        <td>Zuck</td>
+        <td>Meta</td>
+        <td>Coder</td>
+      </tr>
+      <tr>
+        <td>Obiwan</td>
+        <td>Mayaliti</td>
+        <td>Gamer</td>
+      </tr>
+    </table>
+    <h2>Table vertical zebra stripes</h2>
+    <table class="table-vertical">
+      <tr>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+        <th>Sun</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+    </table>
+    <h2>Combine vertical and horinzontal zebra table</h2>
+    <table class="table-combo">
+      <tr>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+        <th>Sun</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+    </table>
+    <h2>Horizontal Divider</h2>
+    <table class="table-horizontal-divider">
+      <tr>
+        <th>Name</th>
+        <th>Company</th>
+        <th>Posts</th>
+      </tr>
+      <tr>
+        <td>Ezzi</td>
+        <td>Araknet</td>
+        <td>Hacker</td>
+      </tr>
+      <tr>
+        <td>Zuck</td>
+        <td>Meta</td>
+        <td>Coder</td>
+      </tr>
+      <tr>
+        <td>Obiwan</td>
+        <td>Mayaliti</td>
+        <td>Gamer</td>
+      </tr>
+    </table>
+  </body>
+</html>

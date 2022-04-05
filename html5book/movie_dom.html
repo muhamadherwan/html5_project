@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width,inital-scale=1.0" />
+  <title>Video on html with control button using DOM.</title>
+  <body>
+    <div style="text-align: center;">
+      <h2>Video control button with DOM.</h2>
+      <button onclick="playPause()">Play/Pause</button>
+      <button onclick="big()">Big</button>
+      <button onclick="small()">Small</button>
+      <button onclick="normal()">Normal</button>
+      <button onclick="mute()">Mute / Unmute</button>
+      <p>
+        <video id="video1" width="420">
+          <source
+            src="http://w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="http://w3schools.com/html/mov_bbb.ogg"
+            type="video/ogg"
+          />
+          Your browser does not support HTML video.
+        </video>
+      </p>
+    </div>
+    <script>
+      let myVideo = document.getElementById('video1')
+
+      function playPause() {
+        if (myVideo.paused) {
+          myVideo.play()
+        } else {
+          myVideo.pause()
+        }
+      }
+
+      function big() {
+        myVideo.width = 560
+      }
+
+      function small() {
+        myVideo.width = 320
+      }
+
+      function normal() {
+        myVideo.width = 420
+      }
+
+      function mute() {
+        if (myVideo.muted) {
+          myVideo.muted = false
+        } else {
+          myVideo.muted = true
+        }
+      }
+    </script>
+  </body>
+</html>

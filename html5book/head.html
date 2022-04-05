@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <title>Basic HTML Structure</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Basic HTML Structure" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta name="author" content="Obiwan" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="10" />
+  <!--refresh this page every 10 second -->
+  <base href="https://www.w3schools.com/" target="_blank" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function myFunction() {
+      document.getElementById('demo').innerHTML = 'Hello Javascript!'
+    }
+  </script>
+  <style>
+    body {
+      background-color: black;
+      color: green;
+    }
+
+    button {
+      background-color: red;
+      color: white;
+      padding: 8px;
+      border: 1px solid green;
+      font-size: 24px;
+    }
+
+    a {
+      color: blue;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <h1>This is a header</h1>
+    <p id="demo">This is a paragraph</p>
+    <button onclick="myFunction()">Click me</button>
+    <h2>The base element</h2>
+    <p>
+      <img src="images/stickman.gif" width="25" heigth="39" alt="stickman" />
+    </p>
+    <p>
+      <a href="tags/tag_base.asp">HTML BASE TAGS</a>
+      The link open in a new window even no target=_blank attribute, becoz the
+      base element is set to "_blank".
+    </p>
+  </body>
+</html>

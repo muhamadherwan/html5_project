@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,inital-scale=1" />
+    <meta name="description" content="Layout using CSS Flexbox" />
+    <meta name="keywords" content="HTML, CSS, flexbox layout" />
+    <meta name="author" content="Obiwan" />
+    <title>CSS Layout Flexbox</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      /* cotainer for flexbox */
+      section {
+        display: -webkit-flex;
+        display: flex;
+      }
+
+      nav {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background-color: #cccc;
+        padding: 20px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: #f1f1f1;
+        padding: 10px;
+      }
+
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      /* responsive layout. make the box stack on top each other in small screens */
+      @media (max-width: 600px) {
+        section {
+          -webkit-flex-direction: column;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Layout Flexbox</h2>
+    <p>
+      This layout contains header, 2 columns/boxes (navigation box, content box)
+      and a footer. On smaller screens, the column will stack on top of each
+      other (responsive).
+    </p>
+
+    <header><h2>Cities</h2></header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>London</h1>
+        <p>
+          London is the capital of England. It is the most populost city in the
+          United Kingdom, with a metropolitan area over 13 million inhabitants.
+        </p>
+        <p>
+          Standing on the River Thames, London has been a major settlement for
+          two millenia, its history going back to its founding by the Romans,
+          who name it Londinium.
+        </p>
+      </article>
+    </section>
+
+    <footer><p>Footer</p></footer>
+  </body>
+</html>

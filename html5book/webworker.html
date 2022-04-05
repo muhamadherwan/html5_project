@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Webworker</title>
+  </head>
+  <body>
+    <h2>Web Worker</h2>
+    <p>
+      Count number:
+      <output id="result"></output>
+    </p>
+    <button onclick="startWorker()">Start Worker</button>
+    <button onclick="stopWorker()">Stop Worker</button>
+
+    <script>
+      let w
+
+      function startWorker() {
+        if (typeof Worker !== 'undefined') {
+          if (typeof w === 'undefined') {
+            w = new Worker('demo_workers.js')
+          }
+          w.onmessage = function (event) {
+            document.getElementById('result').innerHTML = event.data
+          }
+        } else {
+          document.getElementById('result').innerHTML =
+            'Sorry! No web worker support.'
+        }
+      }
+
+      function stopWorker() {
+        w.terminate()
+        w = undefined
+      }
+    </script>
+  </body>
+</html>

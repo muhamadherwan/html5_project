@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Basic</title>
+    <link rel="icon" type="image/x-icon" href="img_food.jpg">
+    <style>
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none; 
+        }
+
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:link, a:visited {
+            background-color: #f44336;
+            color:white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border: 3px solid black;
+        }
+
+        a:hover, a:active{
+            color: black;
+            background-color: green;
+            text-decoration: underline;
+            border: 3px solid red;
+        }
+
+        table, th, td {
+          border:1px solid white;
+          border-collapse:collapse;
+          /* border-radius:10px; make the table border round */
+        }
+
+        th, td {
+          background-color: #96D4D4;
+          border-radius:10px; /* make row border round */
+          border-color: green;
+          border-style: dotted;
+        }
+    </style>
+  </head>
+  <body>
+    <h1
+      style="
+        font-family: verdana;
+        color: green;
+        font-size: 100px;
+        background-color: black;
+        text-align: center;
+      "     
+    >
+      Heading
+    </h1>
+    <p
+      title="this is a title tag"
+      style="background-color: powderblue; font-size: 300%; text-align: right;"
+    >
+      Paragraph
+      <a href="https://google.com">google</a>
+    </p>
+    <p style="background-color: tomato;">
+      <img
+        src="https://www.w3schools.com/images/w3lynx_200.png"
+        alt="w3 school"
+        width="100"
+        height="200"
+      />
+    </p>
+    <pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre
+    >
+    <p><a href="#C4">Bookmark chapter 4</a></p>
+    <p><b>This is a bold text</b></p>
+    <p><strong>this is a important text</strong></p>
+    <p><i>this is a italic text</i></p>
+    <p><em>this is a emphasized text</em></p>
+    <p><small>this a small text</small></p>
+    <p>
+      this is a
+      <mark>mark text</mark>
+    </p>
+    <p>
+      this is
+      <del>deleted text</del>
+    </p>
+    <p>
+      this is a
+      <ins>insert text</ins>
+    </p>
+    <p>
+      this is a
+      <sub>subscripted text</sub>
+    </p>
+    <p>
+      this is a
+      <sup>superscript text</sup>
+    </p>
+
+    <p>blockquote exp:</p>
+    <blockquote cite="http://mayaliti.com">
+      eat sleep code repeat code 20 hours per day 7day.perweek move fast
+      break.things buy your own profesional tools (hardware and software).
+    </blockquote>
+
+    <p>
+      this is a
+      <q>quotation text.</q>
+    </p>
+    <p>
+      this is exp of abbreviations tag: the
+      <abbr title="New World Order">NWO</abbr>
+      was founded in 1996
+    </p>
+    <p> this is the address tag: <address>
+        d23, Vertex Tower,<br>
+        Cybersquare,<br> 
+        Cyberjaya.<br>
+    </address></p>
+    <p>this is <cite>cite tag</cite> by coding jedi.</p>
+    <p><bdo dir="rtl">this text is using bi-directional override tag.</bdo></p>
+
+    <p style="border:2px solid green; color:green; background-color:black;">Coding Jedi: Eat Sleep Code Repeat</p>
+    <p>Color style tag:</p>
+    <h1 style="background-color:rgb(60,179,133)">rgb(60, 179, 133)</h1>
+    <h1 style="background-color:rgba(255,99,71,0.2)">rgba (rgb with opacity) example</h1>
+    <h1 style="background-color:#0000ff">Background color using hex code</h1>
+    <h1 style="background-color:hsl(0, 100%, 50%)">Background color using HSL (Hue Saturation Lightnes) values</h1>
+
+    <p>links:</p>
+    <p><a href="http://google.com" target="_self">open in current window or tab</a></p>
+    <p><a href="http://google.com" target="_blank">opent in new window or tab.</a></p>
+    <p><a href="http://google.com" target="_parent">open in parent window.</a></p>
+    <p><a href="http://google.com" target="_top">open in full body of window.</a></p>
+
+    <p>
+    an image link:<br>
+    <a href="http://w3schools.com">
+    <img src="https://www.w3schools.com/images/w3lynx_200.png" alt="w3 school website" title="w3school link" style="width:200px; height:200px">
+    </a>
+    </p>
+
+    <p>
+        mail link:
+    </p>
+    <a href="mailto:mdherwan@gmail.com" title="send mail">obiwan kenobi email</a>
+
+    <p> button link:
+        <button onclick="document.location='http://google.com'">google search.</button>
+    </p>
+
+    
+    
+    <h2 id="C4">Chapter 4 bookmark.</h2>
+    <p><a href="style.html#C3" target="_blank">Jump to Style page Chapter 3.</a></p>
+
+    <h2>Animated Images</h2>
+    <p><img src="programming.gif" alt ="hacker" title="hacker" style="width:48px; height:48px;"></p>
+
+    <h2>Image Floating.</h2>
+    <p><img src="programming.gif" alt="hacker" title="hacker" style="float:right;width:48px;height:48px">This image will float on the right.</p>
+
+    <p><img src="programming.gif" alt="hacker" title="hacker" style="float:left;width:42px;height:48px">This image will float on the left.</p>
+
+    <p>
+    <h2>Table Example</h2>
+    <table style="width:50%">
+      <tr>
+        <th>Name</th>
+        <th>Company</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Ezzi Moralez</td>
+        <td>Araknet</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Zuck</td>
+        <td>Meta</td>
+        <td>32</td>
+      </tr>
+      <tr>
+        <td>Wan</td>
+        <td>Mayaliti</td>
+        <td>41</td>
+      </tr>
+    </table>
+    </p>
+  </body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
